@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+/* LIGHT THEME (default) */
+:root {
+  --bg: #f8fafc;
+  --text: #0f172a;
+  --card: #ffffff;
+  --muted: #64748b;
+  --accent: #3b82f6;
+}
+
+/* DARK THEME */
+html[data-theme="dark"] {
+  --bg: #0f172a;
+  --text: #e5e7eb;
+  --card: #020617;
+  --muted: #9ca3af;
+  --accent: #60a5fa;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}

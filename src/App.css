@@ -1,0 +1,37 @@
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  color: #9ca3af;
+  margin-top: 0.25rem;
+}
+
+.state {
+  margin-top: 2rem;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.state.error {
+  color: #717ff8;
+}
+
+.org-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
