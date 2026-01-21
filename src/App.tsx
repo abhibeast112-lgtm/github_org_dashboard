@@ -7,18 +7,17 @@ import Skeleton from "./components/Skeleton";
 import { useDebounce } from "./hooks/useDebounce";
 import "./App.css";
 
-/* ✅ THIS IS USED */
 const getInitialTheme = () =>
   localStorage.getItem("theme") ?? "dark";
 
 export default function App() {
-  /* ✅ ADD THIS */
+ 
   const [theme, setTheme] = useState(getInitialTheme);
 
   const [org, setOrg] = useState(localStorage.getItem("org") || "");
   const debouncedOrg = useDebounce(org);
 
-  /* ✅ APPLY THE THEME TO <html> */
+  
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
@@ -58,7 +57,7 @@ export default function App() {
             setTheme(theme === "dark" ? "light" : "dark")
           }
         >
-          {theme === "dark" ? "🌞 Light Mode" : "🌙 Dark Mode"}
+          {theme === "" ? " " : ""}
         </button>
       </header>
 
